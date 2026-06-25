@@ -7,12 +7,23 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.black,
-      appBar: AppBar(
-        title: const Text('الفضائي TV', style: TextStyle(color: Colors.white)),
-        backgroundColor: Colors.black,
-      ),
-      body: const Center(
-        child: Text('شاشة الرئيسية قيد التصميم', style: TextStyle(color: Colors.white)),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            const Icon(Icons.live_tv, size: 100, color: Colors.blueAccent),
+            const SizedBox(height: 20),
+            const Text(
+              'أهلاً بك في الفضائي TV',
+              style: TextStyle(color: Colors.white, fontSize: 28, fontWeight: FontWeight.bold),
+            ),
+            const SizedBox(height: 10),
+            const Text(
+              'أفضل تجربة لمتابعة المباريات',
+              style: TextStyle(color: Colors.white70, fontSize: 16),
+            ),
+          ],
+        ),
       ),
     );
   }
