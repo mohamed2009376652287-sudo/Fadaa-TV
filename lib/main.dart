@@ -39,9 +39,9 @@ class _MainNavigationState extends State<MainNavigation> {
       body: _screens[_currentIndex],
       bottomNavigationBar: BottomNavigationBar(
   backgroundColor: Colors.black,
-  type: BottomNavigationBarType.fixed, // مهم جداً عشان يثبت الأيقونات
-  selectedItemColor: Colors.blueAccent, // لون الأيقونة النشطة
-  unselectedItemColor: Colors.white60, // لون الأيقونات غير النشطة
+  type: BottomNavigationBarType.fixed,
+  selectedItemColor: Colors.blueAccent,
+  unselectedItemColor: Colors.white60,
   currentIndex: _currentIndex,
   onTap: (index) => setState(() => _currentIndex = index),
   items: const [
