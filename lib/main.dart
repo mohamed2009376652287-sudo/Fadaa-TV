@@ -38,17 +38,19 @@ class _MainNavigationState extends State<MainNavigation> {
     return Scaffold(
       body: _screens[_currentIndex],
       bottomNavigationBar: BottomNavigationBar(
-  backgroundColor: Colors.black,
-  type: BottomNavigationBarType.fixed,
-  selectedItemColor: Colors.blueAccent,
-  unselectedItemColor: Colors.white60,
-  currentIndex: _currentIndex,
-  onTap: (index) => setState(() => _currentIndex = index),
-  items: const [
-    BottomNavigationBarItem(icon: Icon(Icons.home_filled), label: 'الرئيسية'),
-    BottomNavigationBarItem(icon: Icon(Icons.emoji_events), label: 'البطولات'),
-    BottomNavigationBarItem(icon: Icon(Icons.play_circle_fill), label: 'البث'),
-    BottomNavigationBarItem(icon: Icon(Icons.settings), label: 'المزيد'),
-  ],
-),
-      
+        backgroundColor: Colors.black,
+        type: BottomNavigationBarType.fixed,
+        selectedItemColor: Colors.blueAccent,
+        unselectedItemColor: Colors.white60,
+        currentIndex: _currentIndex,
+        onTap: (index) => setState(() => _currentIndex = index),
+        items: const [
+          BottomNavigationBarItem(icon: Icon(Icons.home_filled), label: 'الرئيسية'),
+          BottomNavigationBarItem(icon: Icon(Icons.emoji_events), label: 'البطولات'),
+          BottomNavigationBarItem(icon: Icon(Icons.play_circle_fill), label: 'البث'),
+          BottomNavigationBarItem(icon: Icon(Icons.settings), label: 'المزيد'),
+        ],
+      ),
+    );
+  }
+}
