@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:firebase_core/firebase_core.dart'; // 1. استيراد مكتبة Firebase
+import 'package:firebase_core/firebase_core.dart'; // استيراد مكتبة Firebase
 import 'screens/home_screen.dart';
 import 'screens/leagues_screen.dart';
 import 'screens/watch_screen.dart';
 import 'screens/more_screen.dart';
 
 void main() async {
-  // 2. تهيئة Firebase قبل تشغيل التطبيق
+  // تهيئة الاتصال بـ Firebase قبل تشغيل التطبيق
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(); 
   
@@ -62,3 +62,4 @@ class _MainNavigationState extends State<MainNavigation> {
     );
   }
 }
+
