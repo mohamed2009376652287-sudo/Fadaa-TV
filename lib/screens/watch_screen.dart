@@ -14,7 +14,6 @@ class WatchScreen extends StatelessWidget {
       ),
       body: Column(
         children: [
-          // مكان المشغل (سوداء مؤقتاً لحد ما نربط السيرفر)
           Container(
             height: 250,
             width: double.infinity,
