@@ -1,5 +1,5 @@
 name: fadaa_tv
-description: "تطبيق الفضائي TV للبث المباشر"
+description: "للبث المباشر TV تطبيق الفضائي"
 publish_to: 'none'
 version: 1.0.0+1
 
@@ -10,6 +10,8 @@ dependencies:
   flutter:
     sdk: flutter
   http: ^1.2.0
+  firebase_core: ^3.0.0
+  cloud_firestore: ^5.0.0
 
 flutter:
   uses-material-design: true
