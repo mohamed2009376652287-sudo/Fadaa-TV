@@ -10,12 +10,13 @@ class MoreScreen extends StatelessWidget {
       appBar: AppBar(
         title: const Text('المزيد', style: TextStyle(color: Colors.white)),
         backgroundColor: Colors.black,
+        centerTitle: true,
       ),
       body: ListView(
         children: const [
-          ListTile(title: Text('الدعم الفني', style: TextStyle(color: Colors.white))),
-          ListTile(title: Text('مشاركة التطبيق', style: TextStyle(color: Colors.white))),
-          ListTile(title: Text('حول التطبيق', style: TextStyle(color: Colors.white))),
+          ListTile(leading: Icon(Icons.support_agent, color: Colors.blue), title: Text('الدعم الفني', style: TextStyle(color: Colors.white))),
+          ListTile(leading: Icon(Icons.share, color: Colors.white), title: Text('مشاركة التطبيق', style: TextStyle(color: Colors.white))),
+          ListTile(leading: Icon(Icons.info, color: Colors.grey), title: Text('حول التطبيق', style: TextStyle(color: Colors.white))),
         ],
       ),
     );
