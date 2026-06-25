@@ -10,9 +10,15 @@ class LeaguesScreen extends StatelessWidget {
       appBar: AppBar(
         title: const Text('البطولات', style: TextStyle(color: Colors.white)),
         backgroundColor: Colors.black,
+        centerTitle: true,
       ),
-      body: const Center(
-        child: Text('قائمة البطولات ستظهر هنا', style: TextStyle(color: Colors.white)),
+      body: ListView(
+        padding: const EdgeInsets.all(16),
+        children: const [
+          ListTile(leading: Icon(Icons.emoji_events, color: Colors.amber), title: Text('الدوري المصري', style: TextStyle(color: Colors.white))),
+          ListTile(leading: Icon(Icons.emoji_events, color: Colors.blue), title: Text('دوري أبطال أوروبا', style: TextStyle(color: Colors.white))),
+          ListTile(leading: Icon(Icons.emoji_events, color: Colors.green), title: Text('الدوري الإنجليزي', style: TextStyle(color: Colors.white))),
+        ],
       ),
     );
   }
